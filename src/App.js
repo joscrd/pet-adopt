@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 // Components
 import Home from './components/Home';
 import Pets from './components/Pets';
@@ -10,37 +11,25 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  NavLink
+  Link
 } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
-      <div className='navbar'>
-        <div>
-          <Link to="/">Inicio</Link>
-          <Link to="/pets">Mascotas</Link>
-          <Link to="/upload">Subir</Link>
-          <Link to="/contact">Contacto</Link>
+      <div className="container">
+        <div className="navbar">
+          <Link to="/" className="link">Inicio</Link>
+          <Link to="/pets" className="link">Mascotas</Link>
+          <Link to="/upload" className="link">Subir</Link>
+          <Link to="/contact" className="link">Contacto</Link>
         </div>
 
         <Switch>
-          <Route path="/upload">
-            <Upload />
-          </Route>
-
-          <Route path="/contact">
-            <Contact />
-          </Route>
-
-          <Route path="/pets">
-            <Pets />
-          </Route>
-
-          <Route path="/" exact>
-            <Home />
-          </Route>
+          <Route path="/upload" component={Upload} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/pets" component={Pets} />
+          <Route path="/" component={Home} exact />
         </Switch>
       </div>
     </Router>

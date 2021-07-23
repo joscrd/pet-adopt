@@ -1,0 +1,55 @@
+@font-face{
+    font-family: "IndieFlower-Regular";
+    src: url('../fonts/IndieFlower-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Yomogi-Regular";
+    src: url('../fonts/Yomogi-Regular.ttf');
+}
+
+body {
+    background-image: url("../img/y-so-serious-white.png");
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 75rem;
+}
+
+.navbar {
+    padding: 0.7rem 1.5rem;
+    line-height: 2.2rem;
+    z-index: 20;
+    left: 0;
+    height: 3.6rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eaecef;
+    float: right;
+}
+
+.navbar .link{
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 0.7rem;
+    display: flex;
+}
+
+.title {
+    font-family: 'IndieFlower-Regular';
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.some {
+    font-family: 'Yomogi-Regular';
+    font-size: 1.4em;
+}

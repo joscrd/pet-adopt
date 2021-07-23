@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {Fragment} from 'react';
+import {useForm} from 'react-hook-form';
 
 const Upload = () => {
+
+    const {register, errors, handleSubmit} = useForm();
     return (  
-        <p>Upload pet</p>
+        <Fragment>
+            
+        </Fragment>
     );
 }
  
