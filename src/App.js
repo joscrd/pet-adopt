@@ -1,12 +1,4 @@
 import React from 'react';
-
-
-// Components
-import Home from './components/Home';
-import Pets from './components/Pets';
-import Upload from './components/Upload';
-import Contact from './components/Contact';
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,15 +6,21 @@ import {
   Link
 } from 'react-router-dom';
 
+// Components
+import Home from './components/Home';
+import Pets from './components/Pets';
+import Upload from './components/Upload';
+import Contact from './components/Contact';
+
 function App() {
   return (
     <Router>
       <div className="container">
         <div className="navbar">
-          <Link to="/" className="link">Inicio</Link>
-          <Link to="/pets" className="link">Mascotas</Link>
-          <Link to="/upload" className="link">Subir</Link>
           <Link to="/contact" className="link">Contacto</Link>
+          <Link to="/upload" className="link">Subir</Link>
+          <Link to="/pets" className="link">Mascotas</Link>
+          <Link to="/" className="link">Inicio</Link>
         </div>
 
         <Switch>

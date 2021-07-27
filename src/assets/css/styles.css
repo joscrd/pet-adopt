@@ -1,3 +1,5 @@
+/* Fonts */
+
 @font-face{
     font-family: "IndieFlower-Regular";
     src: url('../fonts/IndieFlower-Regular.ttf');
@@ -7,6 +9,13 @@
     font-family: "Yomogi-Regular";
     src: url('../fonts/Yomogi-Regular.ttf');
 }
+
+@font-face {
+    font-family: "Pacifico-Regular";
+    src: url('../fonts/Pacifico-Regular.ttf');
+}
+
+/* Body */
 
 body {
     background-image: url("../img/y-so-serious-white.png");
@@ -18,29 +27,38 @@ body {
     max-width: 75rem;
 }
 
+/* Header */
+
 .navbar {
     padding: 0.7rem 1.5rem;
     line-height: 2.2rem;
-    z-index: 20;
-    left: 0;
     height: 3.6rem;
-    background-color: #fff;
+    background-color: rgb(235, 235, 235);
     box-sizing: border-box;
     border-bottom: 1px solid #eaecef;
-    float: right;
 }
 
-.navbar .link{
+.link {
+    font-family: 'Pacifico-Regular';
+    color: #43b86a;
     padding-left: 1.5rem;
+    text-decoration: none;
     box-sizing: border-box;
-    background-color: #fff;
     white-space: nowrap;
-    font-size: 0.9rem;
-    position: absolute;
-    right: 1.5rem;
-    top: 0.7rem;
+    font-size: 1.3rem;
+    top: 0.3rem;
+    bottom: 0.3;
+    position: relative;
+    float: right;
     display: flex;
 }
+
+.link:hover {
+    font-size: 1.7rem;
+    transition: 0.3s;
+}
+
+/* Home Component */
 
 .title {
     font-family: 'IndieFlower-Regular';
